@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>UTubeGrabber</title>
+    <link rel="stylesheet" href="styles\style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="img\favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img\favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div id="logo">
+        <img src="img\logo.png" alt="logo" />
+      </div>
+    </header>
+    <main>
+      <section class="input-group">
+        <div class="main">
+          <h1 class="finder-heading">Download a Youtube video</h1>
+          <form id="js-form">
+            <label for="search-term"></label>
+            <input
+              class="search-input"
+              type="text"
+              name="search-term"
+              id="js-search-term"
+              required
+              placeholder="       Paste link here https://youtu.be/sC11wWvQ7hE"
+            />
+
+            <label for="max-results"></label>
+
+            <input class="go-button" type="submit" value="Download Now" />
+          </form>
+
+          <section class="error-results">
+            <p id="js-error-message" class="error-message"></p>
+          </section>
+          <div class="cc-notice">
+            <b>Example:</b> https://youtu.be/7_S1bxrZZOk <br />
+            <b>or type a title:</b> Goalden Chyld - Focus Freestyle
+          </div>
+        </div>
+      </section>
+
+      <section id="results" class="hidden">
+        
+        <h2>Search result</h2>
+        <ul id="results-list" class="w3-bar"></ul>
+      </section>
+
+      <section class="instruction-body">
+        <div class="intstruction-content">
+          <div class="instruction-head">
+            <h3>How to Download Youtube Videos</h3>
+            <p>
+              Paste the URL of Video from YouTube or type the title of a video
+              you want into the field above.
+            </p>
+          </div>
+          <div class="instruction-box">
+            <div class="instruction-box-image">
+              <img
+                src="img\Folder-Links.png"
+                alt="twitter video downloader"
+                width="110"
+                height="110"
+              />
+            </div>
+            <div class="instruction-box-header">
+              <div class="instruction-box-heading">Copy the Video URL</div>
+              <div class="instruction-box-description">
+                Find the YouTube video that you want to download and copy its
+                link.
+              </div>
+            </div>
+          </div>
+          <div class="instruction-box">
+            <div class="instruction-box-image">
+              <img
+                src="img\browser.png"
+                alt="twitter video downloader"
+                width="110"
+                height="110"
+              />
+            </div>
+            <div class="instruction-box-header">
+              <div class="instruction-box-heading">
+                Paste URL into Search Box
+              </div>
+              <div class="instruction-box-description">
+                Next, paste the video's link into the search field above, then
+                click the Download button.
+              </div>
+            </div>
+          </div>
+          <div class="instruction-box">
+            <div class="instruction-box-image">
+              <img
+                src="img\download-arrow.png"
+                alt="twitter video downloader"
+                width="110"
+                height="110"
+              />
+            </div>
+            <div class="instruction-box-header">
+              <div class="instruction-box-heading">
+                Download and Save Video
+              </div>
+              <div class="instruction-box-description">
+                Click the Download button to save the Youtube video to your
+                computer.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="image-instruction-body">
+        <div class="image-instruction-head">
+          <h3>How to Use Our YouTube Downloader</h3>
+        </div>
+        <div class="image-instruction-box">
+          <div class="notes">
+            <p>
+              Note: UTubeGrabber respects owner's rights and and discourages
+              users to use videos for anything that is against the copyright
+              protection terms and conditions. UTubeGrabber suggest you download
+              videos legally in accordance with the related terms and
+              conditions.
+            </p>
+          </div>
+          <div class="image-background">
+            <img
+              class="box-image-left"
+              src="img\1.png"
+              alt="copy youtube link"
+            />
+            <div class="image-text">
+              <p>
+                <strong>Step 1:</strong> Open Youtube to your favorite video,
+                under the video click the share button.
+              </p>
+            </div>
+          </div>
+          <div class="image-background-colorless">
+            <img
+              class="box-image-left"
+              src="img\2.png"
+              alt="copy youtube link"
+            />
+            <div class="image-text">
+              <p>
+                <strong>Step 2:</strong> Once the pop-up share button is active
+                click the copy button to copy the link.
+              </p>
+            </div>
+          </div>
+          <div class="image-background">
+            <img
+              class="box-image-left"
+              src="img\3.png"
+              alt="copy youtube link"
+            />
+            <div class="image-text">
+              <p>
+                <strong>Step 3:</strong> Paste your link in the input box or you
+                can type the title of your video and just click download.
+              </p>
+            </div>
+          </div>
+          <div class="image-background-colorless">
+            <img
+              class="box-image-left"
+              src="img\4.png"
+              alt="copy youtube link"
+            />
+            <div class="image-text">
+              <p>
+                <strong>Step 4:</strong> Once your video display below you have
+                the option to choose Audio Download Mp3 or Video Download.
+              </p>
+            </div>
+          </div>
+          <div class="image-background">
+            <img
+              class="box-image-left"
+              src="img\5.png"
+              alt="copy youtube link"
+            />
+            <div class="image-text">
+              <p>
+                <strong>Step 5:</strong> Once your choice is made a new page
+                will appear at which you will be able to play the video and
+                download the video. To download click on the 3 virtical buttons
+                on the bottom right of the video.
+              </p>
+            </div>
+          </div>
+          <div class="image-background-colorless">
+            <img
+              class="box-image-left"
+              src="img\6.png"
+              alt="copy youtube link"
+            />
+            <div class="image-text">
+              <p>
+                <strong>Step 6:</strong> After the 3 buttons are click a pop-up
+                download button will appear, click on the download button and
+                choose the file where you want your new download to go.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer-right">
+        <p>Copyright © 2019 UTubeGrabber. All rights reserved.</p>
+      </section>
+      <section class="footer-left">
+        <p>Created by David Piper</p>
+      </section>
+    </footer>
+    <script src="scripts\app.js"></script>
+  </body>
+</html>
