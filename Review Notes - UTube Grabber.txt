@@ -1,0 +1,59 @@
+Hi David,
+
+Thanks for submitting your app for review. You've done great work and I commend your efforts!
+
+Overall, I have recommended that your app be approved.
+
+I've included detailed feedback and suggestions below, along with screenshots, which I hope will be helpful. 
+
+Your screenshots and a downloadable version of this feedback are available at https://www.dropbox.com/sh/6tkgrphke8iq9vu/AAAwMpAuppD5RsiuzISNz9Ava?dl=0. Please download them within one week, as I may remove them after that time.
+
+If you'd like to discuss anything in more detail, you're welcome to get in touch with me via email at jharris@thinkful.com, or on Slack at @joshua_harris.
+
+Kind regards,
+Joshua Harris, *Capstone Grader*
+
+---
+
+# Is this project ready for official scoring?
+
+Yes.
+
+# User flow
+## Rate the user flow of the app on a scale from 1-5 (5 being the highest).
+
+4
+
+- Recommend scrolling the user to the search result and/or including some kind of visual indicator that the page is scrollable (a down arrow, some of the next section showing, etc.), as it wasn't immediately clear to me that I could scroll.
+- Recommend including an anchor link to the instructions. I didn't realize they were there until after I had already searched.
+
+# Content
+## Rate the content of the app on a scale from 1-5 (5 being the highest).
+
+5
+
+# Design
+## Rate the design of the app on a scale from 1-5 (5 being the highest).
+
+5
+
+# JS architecture
+## Rate the student's JS code on a scale from 1-5 (5 being the highest).
+
+5
+
+# API integration
+## Rate the integration with a third party API on a scale from 1-5 (5 being the highest).
+
+5
+
+# Accessibility
+## Rate the app's adherence to a11y best practices on a scale from 1-5 (5 being the highest).
+
+3
+
+- Recommend implementing the `fieldset` and `legend` tags for form accessibility.
+- No `role` or `aria-label` attributes are present. Recommend implementing ARIA attributes for accessibility. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques#Roles
+- No `aria-live` tags are present. Recommend implementing `aria-live` tags.
+  - https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions
+  - http://heydonworks.com/practical_aria_examples/
