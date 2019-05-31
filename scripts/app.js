@@ -41,6 +41,7 @@ function displayResults(responseJson) {
     }" download><i class="fa fa-download"></i> Mp4 Video Download</a></button></li>`
   );
   //display the results section
+  $("#results").removeClass("hidden");
 }
 
 //initiate youtube download
@@ -102,8 +103,6 @@ function getYouTubeVideos(query) {
     .then(download => displayResults(download))
     // .then(responseJson => displayResults(responseJson))
     .catch(err => {
-      $("#results-list").empty();
-      $("#results").addClass("hidden");
       $("#js-error-message").text(`Something went wrong: ${err.message}`);
     });
 }
@@ -114,14 +113,12 @@ function watchForm() {
     event.preventDefault();
     const searchTerm = $("#js-search-term").val();
     //const maxResults = $("#js-max-results").val();
-    $("#results-list").html(
-      '<li class="loader"><div class="loader" id="loader"></div></li>'
-    );
-    $("#results").removeClass("hidden");
     getYouTubeVideos(searchTerm);
     console.log(searchTerm);
+    $("#results-list")
+      .append("<li>searching for video</li>")
+      .show(); //waiting search
   });
 }
 
-watchForm();
-// $(watchForm);
+$(watchForm);
