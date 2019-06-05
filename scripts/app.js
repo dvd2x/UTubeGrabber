@@ -6,7 +6,7 @@ String.prototype.trunc = function(n) {
 };
 
 // using apiKey for youtube api
-const apiKey = "AIzaSyCGKrLxvpot6hrekFHQTPaCGeOFj92T3ao";
+const apiKey = "AIzaSyBF1mbOSX_n4nPp1vOy2F6rnQcjtjJKjfw";
 const searchURL = "https://www.googleapis.com/youtube/v3/search";
 
 function formatQueryParams(params) {
