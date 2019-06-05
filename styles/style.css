@@ -7,11 +7,6 @@
 .downloader-heading {
   font-family: "Oswald", sans-serif;
 }
-/* 
-header {
-  background-image: url("img\logo.png");
-  background-repeat: no-repeat;
-} */
 
 .header {
   width: 100%;
@@ -127,10 +122,6 @@ body {
 .search-input:focus {
   border: 4px solid #00ff00;
 }
-
-/* .max-number:focus {
-  border: 2px solid #ffd3d3;
-} */
 
 .download-button,
 .go-button {
@@ -350,10 +341,9 @@ p {
   text-align: left;
 }
 
-/* loader */
 div.loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -382,7 +372,6 @@ li.loader {
 .hide-loader {
   display: none;
 }
-/* end loader */
 
 .footer {
   background-color: #772626;
@@ -415,25 +404,7 @@ li.loader {
   font-size: 0.875rem;
 }
 
-/* @media all and (max-width: 1690px) { ...}
-@media all and (max-width: 1280px) { ...}
-@media all and (max-width: 980px) { ... }
-@media all and (max-width: 736px) { ... } 
-@media all and (max-width: 480px) { ... }*/
 
-/* @media only screen and (min-width: 721px) and (max-width: 1121px) {
-  header {
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    width: 214px;
-    height: 214px;
-  }
-} */
 @media only screen and (min-width: 720px) and (max-width: 1024px) {
   .instruction-body {
     padding-bottom: 5px;
